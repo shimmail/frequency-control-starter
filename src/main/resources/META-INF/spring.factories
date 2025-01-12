@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-org.example.frequencycontrolstarter.FrequencyControlAutoConfiguration
+org.example.frequencycontrolstarter.config.FrequencyControlAutoConfiguration
