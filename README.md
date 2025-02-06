@@ -53,7 +53,17 @@
    spring.redis.password=yourpassword
    ```
 
-3. **使用 `@FrequencyAnnotation` 注解进行限流**： 在需要进行频率控制的方法上使用注解：
+3. **使用 `@FrequencyAnnotation` 注解进行限流**：
+   引入依赖
+   ```
+   <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>frequency-control-spring-boot-starter</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <scope>compile</scope>
+   </dependency>
+   ```
+   在需要进行频率控制的方法上使用注解：
 
    ```java
    @FrequencyAnnotation(key = "register", maxCount = 5, timeRange = 10, timeUnit = "SECONDS")
