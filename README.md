@@ -50,7 +50,7 @@
    ```properties
    spring.redis.host=localhost
    spring.redis.port=6379
-   spring.redis.password=yourpassword
+   spring.redis.password=
    ```
 
 3. **使用 `@FrequencyAnnotation` 注解进行限流**： 在需要进行频率控制的方法上使用注解：
